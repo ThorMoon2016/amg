@@ -685,7 +685,7 @@ form a{
   }
   
   .product-details img {
-    max-width: 300px;
+    max-width: 400px;
     margin-top: 20px;
   }
 
@@ -790,15 +790,24 @@ form a{
 
   }
   
-  @media (max-width: 767px) {
-    .product-details img {
-      margin-top: 0px; /* Prilagodite vrijednost prema želji */
-    }
-  
-    .price-details {
-      margin-top: 10px; /* Prilagodite vrijednost prema želji */
-    }
+  /* Dodajte sve vaše postojeće CSS stilove ovdje */
+
+/* POMJERANJE I VELICINA SLIKE U NARUCI */
+@media (max-width: 767px) {
+  .product-details img {
+    max-width: 400px; /* Željena širina slike na mobilnoj verziji */
+    margin-left: -40px;
   }
+  
+  .price-details {
+    margin-top: 10px; /* Prilagodite vrijednost prema želji */
+  }
+  
+  .product-details {
+    overflow-x: hidden; /* Spriječava horizontalno klizanje unutar .product-details */
+  }
+}
+
   
   
   .red-text {
@@ -927,6 +936,7 @@ body {
     width: 400px;
     margin: 0 auto;
     overflow-x: hidden;
+    margin-top: 50px;
 }
 
 h3 {
