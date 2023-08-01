@@ -754,6 +754,7 @@ form a{
     max-width: 600px; /* Ograničili smo maksimalnu širinu na 400px */
     margin: 20px auto; /* Povećali margin-top na 20px kako bismo ga pomaknuli prema dolje */
     margin-bottom: 10px;
+    background-color: #eeeeee;
   }
   
   
@@ -1018,3 +1019,52 @@ h3 {
 }
 
 
+
+.special-offer-box {
+  width: 200px;
+  height: 100px;
+  background: linear-gradient(135deg, #fbbf00 0%, #ff7a00 100%);
+  border-radius: 20px;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  width: 120px; /* Promijenite ovu vrijednost prema vašim željama za širinu */
+  height: 95px; /* Promijenite ovu vrijednost prema vašim željama za visinu */
+  font-weight: bold;
+  position: absolute;
+  top: 25%; /* Promijenite ovu vrijednost prema vašim željama za pomjeranje prema gore */
+  left: 35%; /* Promijenite ovu vrijednost prema vašim željama za pomjeranje ulijevo */
+  transform: translate(-50%, -50%) rotate(-10deg); /* Rotacija ulijevo */
+  z-index: 1;
+  border: 3px solid rgb(255, 255, 255); /* Dodajte bijele linije oko boxa */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); /* Dodajte sjenu prema vašim željama */
+}
+
+.special-crossed-price {
+  font-size: 16px;
+  margin-top: 5px;
+  text-decoration: line-through;
+}
+
+.special-price {
+  font-size: 26px;
+  margin-top: 5px;
+}
+
+.special-price::after {
+  content: '';
+  display: block;
+  width: 60%;
+  height: 3px;
+  background-color: red;
+  position: absolute;
+  bottom: 4px; /* Promijenite ovu vrijednost ako želite podesiti razmak između cijene i crvene linije */
+  left: 25px;
+}
+.product-details {
+  position: relative;
+}
