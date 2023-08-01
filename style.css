@@ -788,8 +788,15 @@ form a{
     margin-bottom: 20px; /* Dodajemo razmak s donje strane */
     border-radius: 5px;
     width: fit-content;
+    animation: tremble 1.5s infinite;
   }
-  
+  @keyframes tremble {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px) rotate(-2deg); }
+    50% { transform: translateX(5px) rotate(2deg); }
+    75% { transform: translateX(-5px) rotate(-2deg); }
+    100% { transform: translateX(5px) rotate(2deg); }
+  }
 
   @media (max-width: 767px) {
     img {
