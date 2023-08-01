@@ -745,8 +745,17 @@ form a{
     border-radius: 50%; /* Pretvara kvadratni element u krug */
     font-size: 20px;
     margin: 10px auto; /* Automatsko poravnanje lijeve i desne margine */
+    animation: pulse 2s infinite; /* Promijenite 2s na željeno trajanje u sekundama */
   }
-  
+
+  /* Definiramo CSS ključnu animaciju "pulse" za efekt impulsa */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+
   
   #customer-details-container {
     border: 1px solid rgb(0, 0, 0);
@@ -897,6 +906,9 @@ form a{
   .input-box:not(:last-child) {
     margin-bottom: 0;
   }
+  
+
+
   
 /* POMJERANJE HEADER PREMA GORE*/
   .header {
